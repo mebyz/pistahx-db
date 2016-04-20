@@ -1,6 +1,6 @@
 {
-  "name": "sequelize-auto",
-  "version": "0.2.14",
+  "name": "pistahx-db",
+  "version": "0.0.1",
   "description": "Automatically generate bare sequelize models from your database.",
   "main": "index",
   "keywords": [
