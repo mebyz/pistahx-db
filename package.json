@@ -1,0 +1,50 @@
+{
+  "name": "sequelize-auto",
+  "version": "0.2.14",
+  "description": "Automatically generate bare sequelize models from your database.",
+  "main": "index",
+  "keywords": [
+    "mysql",
+    "postgres",
+    "sequelize",
+    "sequelizejs",
+    "mapper"
+  ],
+  "bin": {
+    "sequelize-auto": "bin/sequelize-auto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sequelize/sequelize-auto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sequelize/sequelize-auto/issues"
+  },
+  "scripts": {
+    "test-buster": "npm run test-buster-mysql && npm run test-buster-postgres",
+    "test-buster-mysql": "DIALECT=mysql buster-test",
+    "test-buster-postgres": "DIALECT=postgres buster-test",
+    "test-buster-postgres-native": "DIALECT=postgres-native buster-test",
+    "test-buster-sqlite": "DIALECT=sqlite buster-test"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "author": "Daniel Durante <me@danieldurante.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.2.1",
+    "optimist": "~0.6.1",
+    "sequelize": "^3.3.1"
+  },
+  "devDependencies": {
+    "buster": "^0.7.18",
+    "buster-test": "^0.7.13",
+    "mysql": "^2.7.0",
+    "pg": "^4.4.0",
+    "pg-hstore": "^2.3.2",
+    "referee": "^1.1.1",
+    "sqlite3": "^3.1.1",
+    "tedious": "^1.11.2"
+  }
+}
